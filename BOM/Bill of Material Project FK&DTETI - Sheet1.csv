@@ -1,0 +1,164 @@
+No.,Component,Qty.,Role,Example Source,Unit Cost,Lead Time,Alternative Vendor,Assembly-Critical Notes to Improve Reproducibility in Low-Resource Settings,Part Number,Order Vendor
+1,Electronic box,1,Device circuit container,Electronics distributor,"Rp. 8,400",,SukiTech,"Reproducibility of systems housed within electronic enclosures depends on consistent mechanical design, component placement, and environmental control. The enclosure must provide adequate space and structural support to prevent mechanical stress on internal components and wiring.
+
+Proper ventilation or thermal management should be considered to avoid heat accumulation, which may affect system performance and reliability. Openings for cables, connectors, and interfaces must be accurately positioned to ensure accessibility without causing strain or misalignment.
+
+Internal component placement should be organized and secured to prevent movement during operation. Cable routing must be consistent and minimize interference, tangling, or accidental disconnection. Electrical isolation between conductive parts and the enclosure should be ensured, particularly when using metallic housings.
+
+Material selection for the enclosure should account for durability, insulation properties, and availability in low-resource settings. Any variations in enclosure dimensions, materials, or assembly methods must be clearly documented.
+
+Consistent assembly procedures and thorough documentation of layout, mounting, and environmental conditions are essential to ensure reliable replication across different implementations.",-,CNC STORE BANDUNG
+2,PCB,1,Circuit Board,,"Rp. 23,667",,Fastwork,"Reproducibility in PCB-based systems depends on consistent fabrication, component selection, and assembly practices, especially in low-resource environments where process variability is high.
+
+Accurate PCB fabrication parameters must be defined, including board thickness, copper weight, and trace dimensions, as deviations can affect electrical performance. Solder mask quality and pad design should follow standard guidelines to ensure reliable soldering, particularly when manual assembly is used.
+
+Component selection must consider availability and tolerances; equivalent substitutes should be documented where necessary. Clear labeling of component orientation and polarity (e.g., ICs, capacitors, diodes) is essential to avoid assembly errors. For surface-mount components, footprint accuracy and proper spacing are critical to prevent solder bridging or misalignment.
+
+Soldering conditions, including temperature control and solder type, should be standardized as much as possible. In low-resource settings, where reflow ovens may not be available, manual soldering procedures must be clearly defined and consistently applied.
+
+Power distribution and grounding should be carefully designed, with adequate decoupling capacitors placed close to active components. Poor grounding or unstable power delivery can lead to inconsistent system behavior.
+
+Finally, all design files (schematic, layout, Gerber files), bill of materials (BOM), and assembly instructions must be thoroughly documented. Recording observed issues and assembly variations further supports consistent replication across different builds.",-,Spectra Electronic Manifacture
+3,ESP32-WROOM-32 module,1,Embedded control and BLE communication,Generic ESP32 development board,"Rp. 55,000",,Toko Mikrokontroler Jogja,"Reproducibility in ESP32-based systems within low-resource environments depends heavily on precise assembly and documentation. Variations in power quality, hardware connections, and software configurations can significantly impact system behavior.
+
+A stable 3.3 V power supply is essential, with decoupling capacitors recommended to prevent voltage drops during operation. Proper boot configuration, including correct handling of GPIO0 and EN pins, is necessary for reliable flashing. Pin usage must be carefully managed, avoiding restricted and strapping pins to prevent unintended behavior.
+
+Hardware connections should be short, secure, and share a common ground to minimize noise and instability. WiFi performance is influenced by environmental conditions such as antenna placement and signal interference, which should be documented.
+
+Additionally, reproducibility requires consistent software environments, including specified IDE versions, board packages, and upload parameters. Environmental factors and system responses, such as reset behavior and serial output, should also be recorded.
+
+In low-resource settings, consistent results are achieved not only through design but through careful control and documentation of implementation details.",NET-0031C,CNC Store Jogja
+4,Mini disk vibration motor,16,Mechanical stimulation actuator,Generic coin vibration motor,"Rp. 80,000",,-,"Reproducibility in systems utilizing micro vibration motors depends on consistent electrical supply, secure mechanical mounting, and proper handling of the motor’s operating limits. The motor must be supplied within its specified voltage range (1.5–3.3 V), as deviations can significantly affect vibration intensity and lifespan.
+
+Correct polarity connection should be ensured where applicable, and stable electrical contacts must be maintained to prevent intermittent operation. Variations in supply voltage, especially from batteries, should be considered, as they directly influence motor performance.
+
+Mechanical mounting must be secure to ensure consistent vibration transfer and to prevent movement or detachment during operation. Adhesive or mounting methods should be applied uniformly across builds. Excessive mechanical stress or misalignment may reduce performance or cause premature failure.
+
+Soldering should be performed carefully to avoid overheating the motor terminals, which can damage internal components. In low-resource settings, consistent manual assembly techniques are critical.
+
+Environmental factors such as temperature and surface rigidity can influence perceived vibration output and should be documented. Any variation in motor model, supplier, or specifications must be clearly recorded.
+
+Thorough documentation of operating conditions, mounting method, and electrical configuration is essential to ensure reliable reproducibility across different implementations.",-,Jogja Robotika
+5,Marbels,8,Vibration transmitter to the skin,Toy store,"Rp. 1,200",,Mitra Toys,"Reproducibility in systems utilizing marbles depends on consistent physical properties, controlled handling, and standardized environmental conditions. Key parameters such as diameter, mass, material composition, and surface finish must be uniform, as variations can significantly affect rolling behavior, friction, and collision outcomes.
+
+Marbles should be inspected for defects such as surface irregularities or asymmetry, which may introduce inconsistencies in motion. Handling procedures must minimize contamination (e.g., dust or moisture), as these factors can alter frictional characteristics.
+
+The surface on which the marbles are used must be consistent in material, մակարդ and inclination, as variations can influence speed and trajectory. Storage conditions should prevent damage or deformation and maintain uniformity across samples.
+
+Any differences in marble type, size, or condition must be clearly documented. Consistent recording of physical properties, environmental conditions, and usage setup is essential to ensure reproducibility across different implementations.",-,Toko Dopayu Gifts n Toys
+6,SP6T rotary switch,1,Manual level selection and on/off logic,Electronics distributor,"Rp. 21,200",,Yodatech,"Reproducibility in systems utilizing an SP6T rotary switch depends on consistent mechanical handling, correct terminal identification, and reliable electrical connections.
+
+Accurate identification of the common terminal and the six selectable positions is essential to prevent misconfiguration. Clear labeling or documentation of the switching sequence should be provided, as different rotary switch models may vary in orientation and contact order.
+
+Mechanical stability must be ensured during installation. The switch should be securely mounted to prevent movement or misalignment during operation, as repeated rotation may introduce wear or loosen connections over time.
+
+Electrical connections should be firm and consistent, with proper soldering or secure fastening to avoid intermittent contact. Excessive heat during soldering must be avoided to prevent internal damage to the switch.
+
+Operational conditions, including rotation limits and switching force, should be respected to maintain longevity and consistent performance. In low-resource settings, where component variability may exist, any substitutions or differences in switch models must be clearly documented.
+
+Thorough documentation of pin configuration, orientation, and observed behavior is critical to ensure that the system can be reliably reproduced across different implementations.",-,
+7,ULN2803 or equivalent driver,1,Actuator switching/drive support,Electronics distributor,"Rp. 2,600",,INNOVTRONIC,"Reproducibility in systems utilizing ULN2803A Darlington transistor arrays depends on correct pin configuration, proper load interfacing, and consistent electrical connections. Accurate identification of input, output, ground, and common (COM) pins is essential, as incorrect wiring may result in malfunction or damage to the device.
+
+The ULN2803A functions as a low-side driver; therefore, loads must be connected between the supply voltage and the output pins. The common (COM) pin should be properly connected when driving inductive loads (e.g., relays, motors) to enable internal flyback diodes for protection against voltage spikes.
+
+Input signals must be compatible with the required logic levels, and current limits per channel must not be exceeded. Proper grounding is critical to ensure stable operation and prevent noise-related issues.
+
+Secure and reliable connections should be maintained, whether through sockets or direct soldering. Care should be taken during handling and installation to ensure correct orientation of the DIP-18 package and to avoid overheating during soldering.
+
+Variations in manufacturer specifications or component quality should be documented. Consistent recording of pin usage, load type, and operating conditions is essential to ensure reproducibility across different implementations.",-,EasyWare Electronics
+8,LiPo battery 3.7 V 2000 mAh,1,Portable power source,Battery supplier,"Rp. 22,100",,importmurahbagus,"Reproducibility of battery indicator module performance in low-resource environments depends on accurate electrical connections, stable power conditions, and consistent component handling. Correct identification of input polarity is essential, as reverse connections may damage the module or produce incorrect readings.
+
+The input voltage must fall within the specified operating range of the module to ensure accurate indication. Variations in battery type, charge level, and internal resistance should be considered, as they directly affect measurement reliability. Secure and low-resistance connections are required to prevent voltage drops that may distort the displayed battery level.
+
+Mechanical stability and proper mounting are important to avoid loose connections or intermittent readings during operation. Excessive heat during soldering should be avoided to prevent damage to sensitive components.
+
+Environmental factors, such as temperature and supply fluctuations, should be noted, as they may influence measurement accuracy. Any differences in module type, calibration, or indicator thresholds must be clearly documented.
+
+Consistent documentation of wiring configuration, operating conditions, and observed behavior is essential to ensure reliable reproduction of results across different setups.",-,online cpgga
+9,Battery indicator module,1,Charge-state indication,Electronics distributor,"Rp. 15,000",,Lisu Instrument,"Reproducibility in systems utilizing 1S battery capacity indicator modules depends on correct voltage range usage, accurate polarity connection, and consistent electrical integration. The module must be connected to a single-cell lithium battery within the specified range (3.3–4.2 V), as operation outside this range may result in inaccurate indication or device damage.
+
+Proper identification of positive and negative terminals is essential to prevent reverse polarity, which can impair functionality. Secure and low-resistance connections are required to ensure stable voltage sensing and consistent indicator behavior.
+
+Variations in battery condition, including state of charge and internal resistance, can influence the displayed capacity and should be considered when interpreting results. Mechanical stability and careful handling are necessary to prevent loose connections or intermittent readings.
+
+Thermal and environmental conditions may affect measurement accuracy and should be documented where relevant. Differences in module calibration, LED threshold levels, or manufacturer design must be clearly recorded.
+
+Consistent documentation of wiring configuration, battery type, and observed indicator behavior is essential to ensure reproducibility across different implementations.",-,Jogja Robotika
+10,Foam bra cup / wearable cup assembly,1 pair,Mechanical support and wearable integration,Garment or craft supplier,"Rp. 7,999",,JLJ Shop,"Reproducibility in foam bra cup (wearable cup) assemblies depends on consistent material properties, accurate positioning, and reliable attachment methods. The foam cups must have uniform thickness, shape, and density, as variations can affect comfort, fit, and structural performance.
+
+Correct orientation and alignment of the cups are essential to ensure symmetry and consistent placement within the wearable system. Clear reference points or markings should be defined to guide positioning during assembly.
+
+Attachment methods, such as adhesive bonding, stitching, or embedding within fabric, must be applied consistently to ensure secure fixation without deformation. Variations in adhesive type, curing time, or stitching technique may affect durability and repeatability.
+
+Mechanical flexibility and user interaction should be considered, as repeated use may introduce deformation or detachment. Proper handling during assembly is required to prevent permanent creasing or damage to the foam structure.
+
+Environmental factors, including temperature and humidity, may influence foam elasticity and adhesive performance and should be documented where relevant. Any differences in material type, supplier, or assembly method must be clearly recorded.
+
+Consistent documentation of material specifications, positioning, and attachment procedures is essential to ensure reproducibility across different implementations.",-,Cks_onlinestore
+11,Pouch and straps,1 set,Wearable carriage for electronics enclosure,Fabric or garment supplier,"Rp. 2,500",,murnijaya209,"Reproducibility in systems utilizing JST XH 2.54 mm 4-pin female connectors with pre-attached cables depends on consistent pin mapping, correct orientation, and reliable mechanical and electrical connections. Each wire must be accurately identified and documented, as color coding may vary between manufacturers, including Stocko-type variants.
+
+Proper alignment with the mating male header is essential to prevent reversed insertion or incorrect pin connections. Clear definition of pin numbering and signal assignment should be maintained across all implementations.
+
+The integrity of factory crimped terminals should be verified, as inconsistencies in crimp quality may lead to intermittent connections. Excessive force during insertion or removal should be avoided to prevent damage to the connector housing or loosening of contacts.
+
+Cable length (20 cm) and wire gauge may influence voltage stability and signal integrity, particularly in low-power or sensitive applications. Appropriate cable routing and strain relief should be applied to minimize mechanical stress.
+
+Any variations in connector manufacturer, cable quality, or internal wiring configuration must be documented. Consistent documentation of pin configuration, orientation, and observed performance is essential to ensure reproducibility across different setups.",-,CNC STORE BANDUNG
+12,Charging module TP4056 Type C,1,Provides LiPo battery charging and protection functionality,Electronics distributor,"Rp. 6,000",,ROBOT UNO,"Reproducibility in systems utilizing TP4056 Type-C charging modules depends on correct wiring, stable power input, and proper battery handling. Accurate identification of module terminalsparticularly IN+, IN− (input) and B+, B− (battery) is essential, as incorrect connections may damage the module or battery.
+
+The module must be powered by a stable 5 V input source via the USB Type-C interface. Variations in input voltage or low-quality power supplies can affect charging performance and reliability. Only compatible single-cell lithium batteries (e.g., 3.7 V Li-ion or LiPo) should be used, as the module is not designed for multi-cell configurations.
+
+Secure and low-resistance connections are required to ensure consistent charging behavior and accurate protection functionality. Excessive heat during soldering should be avoided to prevent damage to the module’s integrated circuits and protection components.
+
+Thermal conditions should be considered, as the TP4056 may generate heat during charging, particularly at higher currents. Adequate ventilation or spacing is recommended to maintain stable operation.
+
+Variations in module design, such as charging current settings (e.g., resistor configuration), must be clearly documented. Additionally, indicator LED behavior (charging and full status) should be noted for consistent interpretation.
+
+Comprehensive documentation of wiring configuration, power source, battery type, and observed performance is essential to ensure reproducibility across different implementations.",-,Joga Robotika
+13,DC-DC Booster,4,Regulates and boosts input voltage to required system level,Electronics distributor,"Rp. 7,500",,JW Store Sawangan,"Reproducibility in systems utilizing fixed-output step-up (boost) DC-DC converter modules depends on correct input-output configuration, stable power sourcing, and consistent load conditions. Accurate identification of input (VIN+, VIN−) and output (VOUT+, VOUT−) terminals is essential, as incorrect connections may damage the module or connected components.
+
+The input voltage must fall within the specified operating range, typically from low-voltage sources such as single-cell lithium batteries (e.g., 18650 or LiPo). Variations in input voltage and battery condition can significantly affect output stability and efficiency. The selected module output (5 V, 8 V, 9 V, or 12 V) must match the requirements of the load.
+
+Secure and low-resistance electrical connections are required to minimize voltage drops and ensure consistent performance. Excessive current draw beyond the module’s rated limit (e.g., 1.5 A) should be avoided, as it may lead to overheating or reduced output stability.
+
+Thermal management is important, as boost converters may generate heat during operation, especially under high load conditions. Adequate ventilation or spacing should be maintained to prevent thermal degradation.
+
+Variations in module design, efficiency, and output regulation between manufacturers should be documented. Consistent documentation of wiring configuration, input source, load characteristics, and observed performance is essential to ensure reproducibility across different implementations.",-,ichibot
+14,JST Connector 4 Pin,4,Facilitates modular electrical connections,Electronics distributor,Rp. 1000,,CNC STORE BANDUNG,"Reproducibility in systems utilizing JST XH 2.54 mm 4-pin female cables depends on consistent pin mapping, correct orientation, and reliable electrical connections. Each conductor must be clearly identified and documented, as wire color sequences may vary between manufacturers.
+
+Proper alignment with the corresponding male header is essential to prevent reversed or misconnected pins. Pin numbering and signal assignment should be explicitly defined and consistently applied across implementations.
+
+Electrical connections must be secure, whether pre-crimped or soldered, to avoid intermittent contact or signal loss. Care should be taken to prevent excessive force during insertion or removal, which may damage the connector housing or loosen internal crimps.
+
+Cable length (e.g., 30 cm) and wire quality should be considered, as longer or lower-quality cables may introduce voltage drops or signal degradation. Mechanical strain should be minimized through proper routing and strain relief.
+
+Any variations in connector type, pin arrangement, or cable specifications must be documented. Clear documentation of pin configuration, orientation, and connection methods is essential to ensure reproducibility across different setups.",-,Jogja Robotia
+15,Switch KCD11,1,Enables manual power switching,Electronics distributor,"Rp. 2,500",,Harizka2019,"Reproducibility in systems utilizing KCD11 SPST ON/OFF switches depends on correct terminal identification, secure mechanical mounting, and reliable electrical connections. As a two-pin single-pole single-throw (SPST) switch, proper wiring must ensure that the switch is placed in series with the load to effectively control power flow.
+
+Clear identification of the ON and OFF positions is essential, as orientation may vary between manufacturers. Consistent labeling or documentation should be provided to avoid ambiguity during assembly and operation.
+
+Mechanical stability is critical; the switch must be firmly mounted within an enclosure or panel to prevent movement during repeated use. Improper fitting may lead to loose connections or inconsistent switching behavior.
+
+Electrical connections should be secure, with appropriate soldering or terminal fastening to minimize contact resistance and prevent intermittent operation. Care must be taken to avoid overheating during soldering, which may damage the switch housing or internal contacts.
+
+The switch must be operated within its rated specifications (e.g., 250 V, 3 A AC). Exceeding these limits may result in reduced lifespan or failure. Any variations in switch model, rating, or supplier should be clearly documented.
+
+Consistent documentation of wiring configuration, mounting method, and operational behavior is essential to ensure reproducibility across different implementations.",-,ichibot
+16,4-core USB data cable,1 pair,Provides multi-line wiring for power and control signals between the driver circuit (ULN2803) and external vibration actuators.,Electronics distributor,Rp. 5000,,Golden Dream Official Shop,"Reproducibility in systems utilizing 4-core USB data cables depends on correct wire identification, consistent termination, and reliable electrical connections. The four internal conductors typically VBUS (power), GND (ground), D+, and D− (data lines) must be accurately identified, as color coding may vary between manufacturers.
+
+Proper stripping and termination techniques are essential to prevent short circuits or signal degradation. The data lines (D+ and D−) should be kept as short and closely paired as possible to maintain signal integrity, particularly for communication stability.
+
+Secure soldering or connector attachment must be ensured to avoid intermittent connections. Excessive heat during soldering should be avoided to prevent insulation damage or conductor breakage.
+
+Cable length and quality should be considered, as longer or lower-quality cables may introduce voltage drops and data transmission errors. Mechanical strain on the cable should be minimized through proper routing and strain relief to prevent internal wire damage.
+
+Any variations in cable type, length, or internal configuration must be clearly documented. Consistent documentation of wiring and connection methods is essential to ensure reproducibility across different setups.",-,Jogja Robotia
+17,Ribbon cable,1,Provides compact and flexible internal wiring for embedded vibration motors within the wearable structure,Electronics Distributor,"Rp. 7,500",,Network 8,"Reproducibility in systems utilizing 10-pin rainbow flat flexible cables depends on consistent wire identification, correct orientation, and reliable connection methods. Each conductor must be clearly mapped and documented, as color coding is used for identification but may vary in arrangement depending on the cable source.
+
+Maintaining correct cable orientation is critical, particularly when interfacing with connectors or headers, to prevent reversed or misaligned connections. Pin numbering should be explicitly defined and consistently followed across implementations.
+
+Electrical connections must be secure, with proper crimping, soldering, or connector insertion to avoid intermittent signals. Care should be taken to prevent short circuits between adjacent conductors, especially given the close spacing of flat cables.
+
+Mechanical handling is also important; excessive bending, twisting, or pulling may damage internal conductors or cause delamination. Consistent routing and strain relief should be applied to preserve cable integrity.
+
+Variations in cable length, pitch, or manufacturer specifications should be documented, as these factors may influence performance and compatibility. Clear documentation of pin mapping, orientation, and connection methods is essential to ensure reproducibility across different setups.",-,Jogja Robotia
